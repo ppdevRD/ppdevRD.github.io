@@ -317,14 +317,14 @@
 	}
 
 		.thumbnails .box {
-			margin: 0 1em 2em 1em;
+			margin: 0em 1em 2em 1em;
 			width: 30%;
 		}
 
 			@media screen and (max-width: 1280px) {
 
 				.thumbnails .box {
-					width: 45%;
+					width: 40%;
 				}
 
 			}
@@ -543,6 +543,22 @@
 		margin-bottom: 2em;
 		background: #2c2c32;
 		text-align: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: stretch;
+		-webkit-align-items: stretch;
+		-ms-align-items: stretch;
+		align-items: stretch;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 
 		.box > :last-child,
@@ -562,6 +578,10 @@
 		.box .inner {
 			padding: 1.5em;
 			width: 100% !important;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			flex-wrap: wrap;
 		}
 
 			@media screen and (max-width: 480px) {
